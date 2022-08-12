@@ -5,6 +5,7 @@ import AppAbout from '../home/about';
 import AppFeature from '../home/feature';
 import AppWorks from '../home/works';
 import AppFaq from '../home/faq';
+import AppPricing from '../home/pricing';
 
 function AppHome() {
     return (
@@ -14,6 +15,7 @@ function AppHome() {
             <AppFeature />
             <AppWorks />
             <AppFaq />
+            <AppPricing />
         </div>
     );
 }
