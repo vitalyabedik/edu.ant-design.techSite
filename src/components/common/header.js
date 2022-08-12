@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Menu } from 'antd';
+import { Menu, Anchor } from 'antd';
+const { Link } = Anchor;
 
 function AppHeader() {
     const menuItems = [
@@ -40,11 +41,15 @@ function AppHeader() {
                     <i className='fas fa-bolt'></i>
                     <a href='http://www.google.com'>Tech</a>
                 </div>
-                <Menu
-                    mode='horizontal'
-                    defaultSelectedKeys={['home']}
-                    items={menuItems}
-                />
+                <Anchor targetOffset='65'>
+                    <Link href='#hero' title='Home' />
+                    <Link href='#about' title='About' />
+                    <Link href='#feature' title='Features' />
+                    <Link href='#works' title='How it works' />
+                    <Link href='#faq' title='FAQ' />
+                    <Link href='#pricing' title='Pricing' />
+                    <Link href='#contact' title='Contact' />
+                </Anchor>
             </div>
         </div>
     );

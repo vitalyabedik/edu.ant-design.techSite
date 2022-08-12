@@ -3,7 +3,7 @@ const { Panel } = Collapse;
 
 function AppFaq() {
     return (
-        <div class='block faqBlock'>
+        <div id='faq' class='block faqBlock'>
             <div className='container-fluid'>
                 <div className='titleHolder'>
                     <h2>Frequently Asked Questions</h2>
